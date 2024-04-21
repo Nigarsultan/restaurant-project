@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<title>Restourent</title>
+    <style>
+        .section1{
+            background-color:rgb(29, 26, 26);
+            
+            width:1500px;
+            background-image: url(../restourant/cover/cover1_1500x900.jpg);
+            background-repeat: no-repeat;
+            position:relative;
+            opacity: 2.0;
+            
+            
+        }
+        .verticle-line{
+            width:1px;
+            height:900px;
+            background-color: goldenrod;
+            margin-left:100px;
+        }
+        .verticle-lineabout{
+            width:1px;
+            height:600px;
+            background-color: goldenrod;
+            margin-left:100px;
+        }
+        .verticle-linemiddle1{
+            width:1px;
+            height:400px;
+            background-color: rgb(71, 70, 68);
+            margin-left:100px;
+        }
+        .verticle-linemiddle2{
+            width:1px;
+            height:400px;
+            background-color: rgb(71, 70, 68);
+            margin-left:200px;
+        }
+        .verticle-linemiddle3{
+            width:1px;
+            height:400px;
+            background-color: rgb(71, 70, 68);
+            margin-left:300px;
+        }
+        .verticle-linemiddle4{
+            width:1px;
+            height:400px;
+            background-color: rgb(71, 70, 68);
+            margin-left:100px;
+        }
+        .verticle-lineleft{
+            width:1px;
+            height:80px;
+            background-color: goldenrod;
+            margin-left:100px;
+        }
+        .verticle-lineleft1{
+            width:1px;
+            height:80px;
+            background-color: goldenrod;
+            margin-left:10px;
+        }
+        .verticle-line1{
+            width:1px;
+            height:900px;
+            background-color: goldenrod;
+            margin-left:10px;
+        }
+        .verticle-line1about{
+            width:1px;
+            height:600px;
+            background-color: goldenrod;
+            margin-left:10px;
+        }
+        .verticle-line22{
+            width:1px;
+            height:900px;
+            background-color: goldenrod;
+            margin-right:40px;
+        }
+        .verticle-line22about{
+            width:1px;
+            height:600px;
+            background-color: goldenrod;
+            margin-right:40px;
+        }
+        .verticle-line2{
+            width:1px;
+            height:900px;
+            background-color: goldenrod;
+            margin-left:10px;
+        }
+        .verticle-line2about{
+            width:1px;
+            height:600px;
+            background-color: goldenrod;
+            margin-left:10px;
+        }
+        
+       
+        
+        .part1{
+            display: flex;
+            justify-content: space-between;
+        }
+        .navbardesign{
+            color:wheat;
+            font-size: 26px;
+            font-family:Dancing script;
+        }
+        .overley{
+            position: absolute;
+            height:100px;
+            width:1000px;
+            font-size: 30px;
+            color:goldenrod;
+            margin-left: 300px;
+            margin-top:200px;
+            font-family:Dancing;
+        }
+        .overley1{
+            position: absolute;
+            height:100px;
+            width:1000px;
+            font-size: 30px;
+            color:goldenrod;
+            margin-left: 300px;
+            margin-top:100px;
+            font-family:Dancing;
+        }
+        .navbard{
+            margin-top:50px;
+
+        }
+            
+        .btncover{
+            border:1px solid rgb(239, 130, 5);
+            background:none;
+            font-size:60px;
+            font-family:Dancing script;
+            cursor:pointer;
+            margin-left:400px;
+            color:rgb(239, 15, 8);
+        }
+       .btncover:hover{
+        color:goldenrod;
+        
+       } 
+       .btncover::before{
+        content:"";
+        position: absolute;
+        left:0;
+        width:100%;
+        height:0%;
+        z-index: -1;
+        transition: 0.8s;
+        border-radius: 0 0 50% 50%;
+
+
+       }
+       .coverimage{
+        display: flex;
+        justify-content: space-between;
+        margin-top:50px;
+       }
+       .imgstyle{
+        height:340px;
+        width:300px;
+       }  
+       
+ .h{
+    width:590px;
+    border: 1px solid goldenrod;
+    margin-top:300px;
+    
+    
+ }
+ .horijo{
+    width:200px;
+    border: 1px solid goldenrod;
+    
+    
+    
+ }
+ .recomendation{
+    display: flex;
+    justify-content: space-between;
+   
+ }
+ .menu1{
+    display: flex;
+    justify-content: space-between;
+ }
+        
+    </style>
+</head>
+<body>
+    <section class="section1">
+        
+        <div class="part1">
+        
+        <div class="verticle-line"><div class="verticle-line1"></div></div>
+        <ul class="nav justify-content-center navbard">
+            <li class="nav-item">
+              <a class="nav-link active navbardesign" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link navbardesign" href="#">PAGES</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link navbardesign" href="#">PORTFOLIO</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link navbardesign " href="#">BLOG</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link navbardesign " href="#">SHOP</a>
+            </li>
+          </ul>
+
+          <div class="overley"> 
+            <h1 style="margin-left:200px;font-size: 80px;font-family: Dancing script;"> THE FOOD HEAVEN</h1>
+            <p style="color:rgb(9, 9, 9);">
+                <b>WE HAVE A PROPPER PASSION FOR COOKING.LOVE IS THE SECRET INGREDIENT.</b>
+            </p>
+            <button class="btncover">View more</button>
+            <div class="coverimage">
+                <div>
+                   <div class="slider-frame">
+                    <div class="slide-images">
+                    <div class="image-container">
+                      <marquee scrollamount="5"duration="down">  <img src="../restourant/cover/cover4.jpg"class="imgstyle"></marquee>
+                    </div>
+                   
+                </div>
+            </div>
+                    
+                
+            </div>
+                <div>
+                    <marquee scrollamount="5"duration="left">  <img src="../restourant/cover/cover2.jpg"class="imgstyle"></marquee>
+            </div>
+                <div>
+                    <marquee scrollamount="5"duration="left"> <img src="../restourant/cover/cover3.jpg"class="imgstyle"></marquee>
+            </div>
+        </div>
+
+          </div>
+          
+        <div class="verticle-line22"><div class="verticle-line2"></div></div>
+        </div>
+        <div>
+
+        </div>
+
+        </div>
+        <div >
+            <div class="verticle-lineleft"><div class="verticle-lineleft1"></div></div>
+            <div class="verticle-line"><div class="verticle-line1"><div>
+                <div>
+                    <div class="recomendation">
+
+<div><img src="../restourant/menu/portfolio-small-img-1.jpg"style="height:600px;width:700px;margin-top:100px;margin-right:100px;"></div>
+
+<div><h1 style="font-family:Dancing script;color:wheat;font-size: 40px;margin-left:70px;margin-top: 200px;">Recommendations</h1><h1 style="color:wheat;font-size: 40px;">OUR BEST SPECIALTIES</h1><p style="color:wheat;font-size: 20px;width:500px;font-family:open sans;justify-content: space-around;">Lorem ipsum dolor sit amet, consectet adipisicing eli sed do eiu smotem por incididunt ut abore et doloremagali qua. Ut  nostrud exercitation </p><button class="btncover"style="margin-left:100px;">View more</button>
+    <div class="h"></div>
+
+</div>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+        </div>
+        <div>
+            <h1 style="font-family:Dancing script;color:wheat;font-size: 40px;margin-left:650px;">Special selection</h1>
+            <h1 style="color:wheat;font-size: 40px;margin-left:600px;">FROM OUR MENU</h1>
+            <hr style="height:2px solid goldrod;width:400px;margin-left:550px;color:goldenrod;">
+            <div class="menu1"style="margin-top:60px;">
+                <div class="menu1">
+                <h1 style="font-size:20px;color:wheat;font-family: Danceing script;margin-left:150px;">BEEF BURGER MEAL</h1>
+                <hr class="horijo">
+                
+                <h1 style="font-size:20px;color:wheat;font-family: Danceing script;margin-left:80px;">$32</h1>
+            </div>
+            <div class="menu1">
+                <h1 style="font-size:20px;color:wheat;font-family: Danceing script;margin-left:60px;">PAN SEARED SCALLOPS</h1>
+                <hr class="horijo">
+               
+                <h1 style="font-size:20px;color:wheat;font-family: Danceing script;margin-right:150px;">$32</h1>
+            </div>
+            </div>
+            <div class="menu1"style="margin-top:60px;">
+                <div class="menu1">
+                <h1 style="font-size:20px;color:wheat;font-family: Danceing script;margin-left:150px;">ROASTED LAMB RUMP</h1>
+                <hr class="horijo">
+                
+                <h1 style="font-size:20px;color:wheat;font-family: Danceing script;margin-left:60px;">$32</h1>
+            </div>
+            <div class="menu1">
+                <h1 style="font-size:20px;color:wheat;font-family: Danceing script;margin-left:50px;">BAKED CAMEMBERT</h1>
+                <hr class="horijo">
+               
+                <h1 style="font-size:20px;color:wheat;font-family: Danceing script;margin-right:150px;">$32</h1>
+            </div>
+            </div>
+            <div class="menu1"style="margin-top:60px;">
+                <div class="menu1">
+                <h1 style="font-size:20px;color:wheat;font-family: Danceing script;margin-left:150px;">PAN SEARED SEA BASS</h1>
+                <hr class="horijo">
+                
+                <h1 style="font-size:20px;color:wheat;font-family: Danceing script;margin-left:50px;">$32</h1>
+            </div>
+            <div class="menu1">
+                <h1 style="font-size:20px;color:wheat;font-family: Danceing script;margin-left:50px;">BRAISED OX CHEEK RAVIOLI</h1>
+                <hr class="horijo">
+               
+                <h1 style="font-size:20px;color:wheat;font-family: Danceing script;margin-right:150px;">$32</h1>
+            </div>
+            </div>
+            <div class="menu1"style="margin-top:60px;">
+                <div class="menu1">
+                <h1 style="font-size:20px;color:wheat;font-family: Danceing script;margin-left:150px;">KING PRAWNS AND LOBSTER</h1>
+                <hr class="horijo">
+                
+                <h1 style="font-size:20px;color:wheat;font-family: Danceing script;margin-right:110px;">$32</h1>
+            </div>
+            <div class="menu1">
+                <h1 style="font-size:20px;color:wheat;font-family: Danceing script;margin-left:50px;">CORN FED CHICKEN</h1>
+                <hr class="horijo">
+               
+                <h1 style="font-size:20px;color:wheat;font-family: Danceing script;margin-right:150px;">$32</h1>
+            </div>
+            </div>
+            <div class="menu1"style="margin-top:60px;">
+                <div class="menu1">
+                <h1 style="font-size:20px;color:wheat;font-family: Danceing script;margin-left:150px;">CITRUS CURED SALMON</h1>
+                <hr class="horijo">
+                
+                <h1 style="font-size:20px;color:wheat;font-family: Danceing script;margin-left:50px;">$32</h1>
+            </div>
+            <div class="menu1">
+                <h1 style="font-size:20px;color:wheat;font-family: Danceing script;margin-left:50px;">NDUJA PORK CHICKEN TERRINE</h1>
+                <hr class="horijo">
+               
+                <h1 style="font-size:20px;color:wheat;font-family: Danceing script;margin-right:150px;">$32</h1>
+            </div>
+            </div>
+            
+            </div>
+            <button class="btncover"style="margin-top:100px;margin-left:650px;">select menu</button>
+
+        </div>
+        <hr style="height:2px solid goldrod;width:1300px;margin-left:150px;color:goldenrod;">
+        <hr style="height:2px solid goldrod;width:600px;margin-left:650px;color:goldenrod;">
+        <hr style="height:2px solid goldrod;width:700px;margin-left:750px;color:goldenrod;">
+        <div class="menu1"style="margin-top:10px;">
+            <div class="verticle-lineabout"><div class="verticle-line1about"></div></div>
+            <div class="overley1">
+                <h1 style="font-family: Dancing script;margin-top: 0px;margin-left:400px;margin-bottom: 60px;">ADDRESS</h1>
+                <h1 style="margin-left:300px;color:blanchedalmond;font-size: 20px;">Laurent Restaurant & Fine dining, 71 Madison Ave<br>
+
+                   <span style="margin-left: 30px;">10013 New York, 914-309-7030, <br>reservations@laurent.com</span> 
+                    
+                    Open: 09:00 am – 01:00 pm</h1>
+                    <hr style="height:2px solid goldrod;width:600px;margin-left:650px;color:goldenrod;">
+                    <i class="fa-brands fa-facebook"style="font-size:80px;margin-top:50px;margin-left:200px;"></i>
+                    <i class="fa-brands fa-instagram"style="font-size:80px;margin-left:100px;"></i>
+                    <i class="fa-brands fa-twitter"style="font-size:80px;margin-left:100px;"></i>
+                    <i class="fa-solid fa-location-dot"style="font-size:80px;margin-left:100px;"></i>
+                    
+            </div>
+            <div class="verticle-linemiddle1"></div>
+            <div class="verticle-linemiddle2"></div>
+            <div class="verticle-linemiddle3"></div>
+            <div class="verticle-linemiddle4"></div>
+            <div class="verticle-line22about"><div class="verticle-line2about"></div></div>
+        </div>
+        
+    </section>
+   
+    
+</body>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+</html>
